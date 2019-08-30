@@ -9,6 +9,14 @@ class InsertSort : public Sort {
 
         void execute() {
             // TODO
+            for (int i = 1; i < size; ++i) {
+                int j = i - 1;
+                while (j >= 0 && elements[j] > elements[j+1]) {
+                    std::swap(elements[j+1], elements[j]);
+                    --j;
+                }
+
+            }
         }
 
         inline string name() { return "InsertSort"; }

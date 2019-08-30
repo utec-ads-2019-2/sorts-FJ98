@@ -9,6 +9,17 @@ class SelectSort : public Sort {
 
         void execute() {
             // TODO
+            for (int curMin = 0; curMin < size - 1; ++curMin) {
+                int curMinTmp = curMin;
+                for (int currItem = curMin + 1; currItem < size; ++currItem) {
+                    if (elements[currItem] < elements[curMinTmp]) {
+                        curMinTmp = currItem;
+                    }
+                }
+                if (curMinTmp != curMin) {
+                    std::swap(elements[curMinTmp],elements[curMin]);
+                }
+            }
         }
 
         inline string name() { return "SelectSort"; }
