@@ -10,7 +10,6 @@
 #include "shell.h"
 #include "quick.h"
 #include "merge.h"
-
 using namespace std;
 
 #define NUMBER_OF_TESTS 1000

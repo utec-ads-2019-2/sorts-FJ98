@@ -2,7 +2,9 @@
 #define BUBBLE_H
 
 #include "sort.h"
+#include<iostream>
 #include <algorithm>
+using namespace std;
 
 class BubbleSort : public Sort {       
     public:
