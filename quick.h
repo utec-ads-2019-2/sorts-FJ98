@@ -53,7 +53,7 @@ class QuickSort : public Sort {
         }
 
         void execute() override {
-            // TODO
+            // TO DO
             quickSort(array, 0, size);
         }
 
