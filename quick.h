@@ -7,7 +7,7 @@ class QuickSort : public Sort {
     public:
         QuickSort(int *elements, size_t size) : Sort(elements, size) {}
 
-        int partition(int* A, int low, int high){
+        static int partition(int* A, int low, int high){
             int pivot = A[low], i = low, j = high;
 
             while (i < j) {
@@ -44,7 +44,7 @@ class QuickSort : public Sort {
 //            return left;
 //        }
 
-        void quickSort(int* A, int low, int high){
+        static void quickSort(int* A, int low, int high){
             if (low < high) {
                 int pivot = partition(A, low, high);
                 quickSort(A, low, pivot);
@@ -52,12 +52,12 @@ class QuickSort : public Sort {
             }
         }
 
-        void execute() {
+        void execute() override {
             // TODO
             quickSort(array, 0, size);
         }
 
-        inline string name() { return "QuickSort"; }
+        inline string name() override { return "QuickSort"; }
 };
 
 #endif

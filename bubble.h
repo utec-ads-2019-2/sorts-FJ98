@@ -10,17 +10,10 @@ class BubbleSort : public Sort {
     public:
         BubbleSort(int *elements, size_t size) : Sort(elements, size) {}
 
-    void printArray(int *array, size_t size) {
-        for (int i = 0; i < size; i++) {
-            cout << array[i] << " ";
-        }
-        cout << endl;
-    }
-
-        void execute() {
-            // TODO
-            for (int i = 0; i < size - 1; ++i) {
-                for (int j = 0; j < size - 1 - i; ++j) {
+        void execute() override {
+            // TO DO
+            for (int i = 0; i < static_cast<int>(size) - 1; ++i) {
+                for (int j = 0; j < static_cast<int>(size - 1 - i); ++j) {
                     if (array[j] > array[j + 1]) {
                         std::swap(array[j], array[j + 1]);
                     }
@@ -29,7 +22,7 @@ class BubbleSort : public Sort {
 
         }
 
-        inline string name() { return "BubbleSort"; }
+        inline string name() override { return "BubbleSort"; }
 };
 
 #endif

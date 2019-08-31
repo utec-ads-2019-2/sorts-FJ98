@@ -10,12 +10,11 @@ using namespace std;
 
 class Mocker {
     private:
-        mt19937 rng;
+        std::random_device device;
+        std::mt19937 rng;
         
     public:
-        Mocker() {
-            rng.seed(random_device()());
-        }
+        Mocker() : rng(device()) {}
 
         int generateRandomInt();
         int* generateRandomIntArray(size_t);

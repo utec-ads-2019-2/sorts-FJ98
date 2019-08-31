@@ -1,23 +1,16 @@
 #include <iostream>
-#include <cassert>
 #include <string>
 
 #include "mocker.h"
 #include "tester.h"
-#include "bubble.h"
-#include "select.h"
-#include "insert.h"
-#include "shell.h"
-#include "quick.h"
-#include "merge.h"
+
 using namespace std;
 
 #define NUMBER_OF_TESTS 1000
 
-Mocker mocker;
 
 void executeTests();
-void printArray(int *, size_t);
+//void printArray(int *, size_t);
 
 int main(int argc, char* argv[]) {
     cout << "===========================================================" << endl;
@@ -30,6 +23,7 @@ int main(int argc, char* argv[]) {
 }
 
 void executeTests() {
+    Mocker mocker;
     for (int i = 0; i < NUMBER_OF_TESTS; ++i) {
         size_t size = mocker.generateRandomInt();
         int *array = mocker.generateRandomIntArray(size);
@@ -38,9 +32,9 @@ void executeTests() {
     }
 }
 
-void printArray(int *array, size_t size) {
-    for (int i = 0; i < size; i++) {
-        cout << array[i] << " ";
-    }
-    cout << endl;
-}
+//void printArray(int *array, size_t size) {
+//    for (int i = 0; i < static_cast<int>(size); i++) {
+//        cout << array[i] << " ";
+//    }
+//    cout << endl;
+//}

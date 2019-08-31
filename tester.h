@@ -3,7 +3,7 @@
 
 #include <stdexcept>
 #include <iostream>
-#include <assert.h>
+#include <cassert>
 
 #include "sort.h"
 #include "bubble.h"

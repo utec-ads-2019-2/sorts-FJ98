@@ -49,7 +49,7 @@ class MergeSort : public Sort {
         }
 
         void execute() override {
-            // TODO
+            // TO DO
             mergeSort(array, 0, static_cast<int>(size) - 1);
         }
 

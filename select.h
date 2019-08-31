@@ -7,11 +7,11 @@ class SelectSort : public Sort {
     public:
         SelectSort(int *elements, size_t size) : Sort(elements, size) {}
 
-        void execute() {
-            // TODO
-            for (int curMin = 0; curMin < size - 1; ++curMin) {
-                int curMinTmp = curMin;
-                for (int currItem = curMin + 1; currItem < size; ++currItem) {
+        void execute() override {
+            // TO DO
+            for (size_t curMin = 0; curMin < size - 1; ++curMin) {
+                size_t curMinTmp = curMin;
+                for (size_t currItem = curMin + 1; currItem < size; ++currItem) {
                     if (array[currItem] < array[curMinTmp]) {
                         curMinTmp = currItem;
                     }
@@ -22,7 +22,7 @@ class SelectSort : public Sort {
             }
         }
 
-        inline string name() { return "SelectSort"; }
+        inline string name() override { return "SelectSort"; }
 };
 
 #endif

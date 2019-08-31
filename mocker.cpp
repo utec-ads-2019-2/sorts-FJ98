@@ -7,7 +7,7 @@ int Mocker::generateRandomInt() {
 
 int* Mocker::generateRandomIntArray(size_t size) {
     int *numbers = new int[size];
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < static_cast<int>(size); i++) {
         numbers[i] = generateRandomInt();
     }
 
