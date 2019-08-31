@@ -1,0 +1,4 @@
+/home/felix/clion-2019.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "CodeBlocks - Unix Makefiles" /home/felix/GitHubs-2019-2/ADS-20192/sorts-FJ98
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/felix/GitHubs-2019-2/ADS-20192/sorts-FJ98/cmake-build-debug

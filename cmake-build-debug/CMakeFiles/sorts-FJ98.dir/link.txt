@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/sorts-FJ98.dir/main.cpp.o CMakeFiles/sorts-FJ98.dir/mocker.cpp.o CMakeFiles/sorts-FJ98.dir/tester.cpp.o  -o sorts-FJ98 

@@ -1,0 +1,3 @@
+/home/felix/GitHubs-2019-2/ADS-20192/sorts-FJ98/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/felix/GitHubs-2019-2/ADS-20192/sorts-FJ98/cmake-build-debug/CMakeFiles/sorts-FJ98.dir
+/home/felix/GitHubs-2019-2/ADS-20192/sorts-FJ98/cmake-build-debug/CMakeFiles/edit_cache.dir
