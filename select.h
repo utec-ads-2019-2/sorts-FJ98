@@ -12,12 +12,12 @@ class SelectSort : public Sort {
             for (int curMin = 0; curMin < size - 1; ++curMin) {
                 int curMinTmp = curMin;
                 for (int currItem = curMin + 1; currItem < size; ++currItem) {
-                    if (elements[currItem] < elements[curMinTmp]) {
+                    if (array[currItem] < array[curMinTmp]) {
                         curMinTmp = currItem;
                     }
                 }
                 if (curMinTmp != curMin) {
-                    std::swap(elements[curMinTmp],elements[curMin]);
+                    std::swap(array[curMinTmp], array[curMin]);
                 }
             }
         }

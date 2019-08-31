@@ -8,11 +8,11 @@ using namespace std;
 
 class Sort {
     protected:
-        int *elements;
+        int *array;
         size_t size;
         
     public:
-        Sort(int *elements, size_t size) : elements(elements), size(size) {}
+        Sort(int *elements, size_t size) : array(elements), size(size) {}
 
         virtual void execute() = 0;
 

@@ -11,8 +11,8 @@ class InsertSort : public Sort {
             // TODO
             for (int i = 1; i < size; ++i) {
                 int j = i - 1;
-                while (j >= 0 && elements[j] > elements[j+1]) {
-                    std::swap(elements[j+1], elements[j]);
+                while (j >= 0 && array[j] > array[j + 1]) {
+                    std::swap(array[j + 1], array[j]);
                     --j;
                 }
 

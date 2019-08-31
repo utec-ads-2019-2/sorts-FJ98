@@ -21,8 +21,8 @@ class BubbleSort : public Sort {
             // TODO
             for (int i = 0; i < size - 1; ++i) {
                 for (int j = 0; j < size - 1 - i; ++j) {
-                    if (elements[j] > elements[j+1]) {
-                        std::swap(elements[j], elements[j+1]);
+                    if (array[j] > array[j + 1]) {
+                        std::swap(array[j], array[j + 1]);
                     }
                 }
             }

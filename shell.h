@@ -12,8 +12,8 @@ class ShellSort : public Sort {
             for (int gap = size/2; gap > 0; gap /= 2) {
                 for (int j = gap; j < size; ++j) {
                     int k = j;
-                    while (k >= gap && elements[k-gap] > elements[k]) {
-                        std::swap(elements[k-gap], elements[k]);
+                    while (k >= gap && array[k - gap] > array[k]) {
+                        std::swap(array[k - gap], array[k]);
                         k -= gap;
                     }
                 }
